@@ -1,0 +1,35 @@
+local free = loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/Function-FindFirstChild-Plr/main/Free"))()
+local Func = Instance.new("BindableFunction")
+function Func.OnInvoke(v)
+if v == "Load Map" then
+    print("LoadMap!")
+local b = Instance.new("Part")
+b.Parent = workspace
+b.Name = "loadmappos"
+b.Size = Vector3.new()
+b.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*Vector3.new()
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+local plrld = game.Players.LocalPlayer.Character.HumanoidRootPart
+plrld.CFrame = CFrame.new(-594.3816528320312, 34.01008987426758, 1632.5196533203125) wait(.7)
+plrld.CFrame = CFrame.new(-1020.7955322265625, 177.65464782714844, 407.2884521484375) wait(.7)
+plrld.CFrame = CFrame.new(592.1312866210938, 76.7126235961914, -537.2365112304688) wait(.9)
+plrld.CFrame = CFrame.new(426.89190673828125, 415.9967041015625, -1090.203857421875) wait(.9)
+plrld.CFrame = CFrame.new(-4620.8583984375, 4472.15576171875, 265.1498718261719) wait(.9)
+plrld.CFrame = CFrame.new(2556.447021484375, 194.44827270507812, 48.82370376586914) wait(.9)
+plrld.CFrame = CFrame.new(-2265.236083984375, 205.1367950439453, 2123.892578125) wait(.9)
+plrld.CFrame = CFrame.new(-3638.87060546875, 275.1143798828125, 3776.1435546875) wait(.9)
+plrld.CFrame = CFrame.new(1233.522216796875, 5273.36962890625, -138.35760498046875) wait(.4)
+plrld.CFrame = game.Workspace.loadmappos.CFrame
+local load = game:GetService("Workspace"):FindFirstChild("loadmappos")
+load:Destroy()
+else
+end
+print ("Khanhdzaii!")
+if free then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/VNP1XPER/main/FirstSea'))()
+else loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/VNPxFree/main/First%20Sea'))() 
+end
+end
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "khanhdzaii", Text = "Hãy LoadMap Nếu Không Muốn Có Lỗi", Icon = "https://www.roblox.com/headshot-thumbnail/image?userId="..game.Players.LocalPlayer.UserId.."&width=100&height=100&format=png",Duration = 20,Callback = Func, Button1 = "Load Map", Button2 = " Bật Hub Ngay" 
+})
